@@ -135,3 +135,11 @@ resource "aws_instance" "web" {
     Name = "${var.project_name}-web"
   }
 }
+resource "aws_s3_bucket" "infra_bucket" {
+  bucket = "akhil-terraform-practise-bucket-2026" # S3 bucket names must be globally unique
+
+  tags = {
+    Name        = "Practice S3 Bucket"
+    Environment = "Dev"
+  }
+}
