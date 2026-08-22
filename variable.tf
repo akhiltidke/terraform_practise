@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "project_name" {
@@ -25,7 +25,7 @@ variable "public_subnet_cidr" {
 variable "availability_zone" {
   description = "Availability Zone"
   type        = string
-  default     = "ap-south-1a"
+  default     = "us-east-1a"
 }
 
 variable "instance_type" {
@@ -35,7 +35,7 @@ variable "instance_type" {
 }
 
 variable "ami_id" {
-  description = "Ubuntu AMI ID"
+  description = "ami-0b6d9d3d33ba97d99"
   type        = string
 }
 
